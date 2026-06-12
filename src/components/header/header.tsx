@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "../ui/button"
 import { useRouter } from "next/router";
 import { cn } from "@/lib/utils";
+import { ActiveLink } from "../activeLink/activeLink";
 
 export const Header = () => {
   const router = useRouter();
@@ -15,10 +16,17 @@ export const Header = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/">Logo</Link>
+
           <nav className="flex items-center gap-6">
-            <Link href="/" className={cn('text-sm font-medium transition-colors hover:text-blue-500', isHome ? "text-blue-500" : "text-muted-foreground")}>Início</Link>
-            <Link href="/blog" className={cn('text-sm font-medium transition-colors hover:text-blue-500', isBlog ? "text-blue-500" : "text-muted-foreground")}>Blog</Link>
-            <Button variant="secondary">Começar</Button>
+            <ActiveLink href="/">Início</ActiveLink>
+            <ActiveLink href="/blog">Blog</ActiveLink>
+            <Button
+              variant="secondary"
+              nativeButton={false}
+              render={<Link href="/start" />}
+            >
+              Começar
+            </Button>
           </nav>
         </div>
       </div>
