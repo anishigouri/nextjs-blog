@@ -1,16 +1,11 @@
 import { cn } from "@/lib/utils";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { Footer } from "../footer";
 import { Header } from "../header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 type LayoutProps = {
@@ -21,8 +16,7 @@ export const Layout = ({ children }: LayoutProps) => (
   <div
     className={cn(
       "relative flex min-h-screen flex-col font-sans dark",
-      geistSans.variable,
-      geistMono.variable,
+      inter.className,
     )}
   >
     <Header />
