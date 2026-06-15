@@ -1,8 +1,8 @@
-import { FeatureSection } from "@/components/feature-section";
-import { HeroSection } from "@/components/hero-section";
-import { CustomerStorySection } from "@/components/customer-story-section";
-import { SupportSection } from "@/components/support-section";
-import { CallToAction } from "@/components/call-to-action";
+import { FeatureSection } from "@/templates/sections/feature-section";
+import { HeroSection } from "@/templates/sections/hero-section";
+import { CustomerStorySection } from "@/templates/sections/customer-story-section";
+import { SupportSection } from "@/templates/sections/support-section";
+import { CallToAction } from "@/templates/sections/call-to-action";
 
 export default function Home() {
   return (

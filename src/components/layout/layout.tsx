@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Inter, PT_Sans_Caption } from "next/font/google";
-import { Footer } from "../footer";
-import { Header } from "../header";
+import { Footer } from "./footer";
+import { Header } from "./header";
 
 const inter = Inter({
   subsets: ["latin"],
