@@ -53,6 +53,9 @@
   --text-body-xs: 12px;
   --text-body-xs--line-height: 1.5;
   --text-body-xs--font-weight: 400;
+  --text-body-tag: 12px;
+  --text-body-tag--line-height: 1;
+  --text-body-tag--font-weight: 400;
 
   --text-action-md: 16px;
   --text-action-md--line-height: normal;
@@ -167,6 +170,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  width: 100%;
 }
 
 @layer base {
