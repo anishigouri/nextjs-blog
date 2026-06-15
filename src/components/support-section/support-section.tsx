@@ -2,9 +2,11 @@ import { HeartHandshake, PaintbrushVertical, Store } from 'lucide-react';
 
 export const SupportSection = () => {
   return (
-    <section className="bg-gray-700 pb-8 pt-8 md:py-10 mt-10">
-      <div className="container flex flex-col items-center gap-12">
-        <h2 className="text-balance text-center font-heading text-heading-xl text-gray-100">
+    <section className="relative pb-8 md:py-10 bg-gray-700">
+      <div className="absolute inset-0 hidden md:block bg-[url('/background-features.svg')] bg-cover bg-center bg-no-repeat opacity-90" />
+
+      <div className="container flex flex-col items-center gap-12 relative">
+        <h2 className="text-balance text-center font-sans text-heading-xl text-gray-100">
           Sua loja de afiliados, simples, do jeito que deveria ser
         </h2>
 
@@ -13,7 +15,7 @@ export const SupportSection = () => {
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-300">
               <PaintbrushVertical className="h-6 w-6 text-white" />
             </div>
-            <strong className="font-heading text-heading-sm text-gray-100">
+            <strong className="font-sans text-heading-sm text-gray-100">
               Personalize seu site
             </strong>
             <p className="text-body-sm text-gray-200">
@@ -26,7 +28,7 @@ export const SupportSection = () => {
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-200">
               <Store className="h-6 w-6 text-white" />
             </div>
-            <strong className="font-heading text-heading-sm text-gray-100">
+            <strong className="font-sans text-heading-sm text-gray-100">
               Venda de qualquer loja
             </strong>
             <p className="text-body-sm text-gray-200">
@@ -39,7 +41,7 @@ export const SupportSection = () => {
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-300">
               <HeartHandshake className="h-6 w-6 text-white" />
             </div>
-            <strong className="font-heading text-heading-sm text-gray-100">
+            <strong className="font-sans text-heading-sm text-gray-100">
               Receba suporte amigável
             </strong>
             <p className="text-body-sm text-gray-200">

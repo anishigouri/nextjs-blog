@@ -21,7 +21,7 @@ type LayoutProps = {
 export const Layout = ({ children }: LayoutProps) => (
   <div
     className={cn(
-      "relative flex min-h-screen flex-col font-sans dark",
+      "relative flex min-h-screen flex-col font-inter dark",
       inter.variable,
       ptSansCaption.variable,
     )}

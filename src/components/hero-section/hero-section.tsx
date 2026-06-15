@@ -8,7 +8,7 @@ export const HeroSection = () => {
     <section className="container relative mt-16 pb-8 pt-8 md:py-10">
       <div className="grid min-h-80 grid-cols-1 items-center gap-8 md:h-144 md:grid-cols-2">
         <div className="flex flex-col items-center gap-4 md:items-start">
-          <h1 className="text-balance text-center font-heading text-heading-hg text-gray-100 md:text-left">
+          <h1 className="text-balance text-center font-sans text-heading-hg text-gray-100 md:text-left">
             Venda seus produtos como afiliado em um único lugar
           </h1>
 
