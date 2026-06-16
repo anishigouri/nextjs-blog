@@ -9,5 +9,19 @@ export const AvatarImage = ({
   height = 40,
   ...rest
 }: AvatarImageProps) => {
-  return <Image {...rest} src={src?.toString().trim() ?? 'lmi'} alt={alt} width={width} height={height} />;
+  if (!src) {
+    return null;
+  }
+
+  const normalizedSrc = typeof src === 'string' ? src.trim() : src;
+
+  return (
+    <Image
+      {...rest}
+      src={normalizedSrc}
+      alt={alt}
+      width={width}
+      height={height}
+    />
+  );
 };
