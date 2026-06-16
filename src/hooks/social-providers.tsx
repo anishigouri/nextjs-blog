@@ -1,4 +1,4 @@
-import { AtSign, Briefcase, Hash, Share2, X } from 'lucide-react';
+import { AtSign, Briefcase, Hash, Share2, X, ClipboardCopy } from 'lucide-react';
 
 export type ShareConfig = {
   url: string;
@@ -11,7 +11,8 @@ export type SocialProvider =
   | 'facebook'
   | 'slack'
   | 'twitter'
-  | 'threads';
+  | 'threads'
+  | 'clipboard';
 
 export const SOCIAL_PROVIDERS = {
   linkedin: {
