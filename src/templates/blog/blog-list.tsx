@@ -1,6 +1,6 @@
 'use client';
-import { PostCard } from '@/components/post-card';
-import { PostGridCard } from '@/components/post-grid-card';
+import { PostCard } from '@/templates/blog/components/post-card';
+import { PostGridCard } from '@/templates/blog/components/post-grid-card';
 import { Search } from '@/components/search';
 import { Post } from 'contentlayer/generated';
 import { Inbox } from 'lucide-react';
